@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	table {
+		@apply w-full;
+	}
+
+	td {
+		@apply p-2 border-b-2 border-gray-300;
+	}
+
+	th {
+		@apply p-2 border-y-2 border-gray-400;
+	}
+
+	thead {
+		@apply bg-gray-300;
+	}
+
+	.button {
+		@apply bg-red-700 px-5 py-1 hover:bg-red-600 text-white;
+	}
+
+	.button-bordered {
+		@apply button rounded-full;
+	}
+
+	.button-sm {
+		@apply button px-2 py-1 text-xs;
+	}
+
+	.button-sm-bordered {
+		@apply button-bordered px-2 py-1 text-xs;
+	}
+
+	.card {
+		@apply border-2 border-gray-100 p-4 rounded-md drop-shadow bg-white;
+	}
+
+	.nav-link {
+		@apply py-3 px-5 uppercase cursor-pointer hover:bg-white hover:text-gray-800 duration-300;
+	}
+
+	.nav-link-active {
+		@apply py-3 px-5 uppercase cursor-pointer bg-gray-800 hover:bg-white hover:text-gray-800 duration-300;
+	}
+}

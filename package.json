@@ -1,0 +1,15 @@
+{
+  "name": "zozohub_full_project",
+  "version": "1.0.0",
+  "description": "The full project",
+  "main": "index.js",
+  "scripts": {
+    "start":  "concurrently \"cd PC_Builder && python run_main.py\" \"cd backend && npm start\" \"cd zozohub_website && npm start\" \"cd dashboard && npm start\"",
+    "install":  "concurrently \"cd backend && npm install\" \"cd zozohub_website && npm install\" \"cd dashboard && npm install\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
